@@ -51,5 +51,6 @@ class EmoNet():
 
 		if is_training:
 			return logits, dropout_placeholder
+print("hello!")
 		return logits
 
