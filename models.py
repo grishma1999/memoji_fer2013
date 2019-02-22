@@ -11,7 +11,7 @@ class EmoNet():
 		self.n_outputs = n_outputs
 		self.num_blocks = num_blocks
 		self.num_layers_per_block = num_layers_per_block
-
+print("welcome");
 	def residual_dilated_block(self, x, filters, kernel_size, dilation, name):
 		with tf.variable_scope(name) as scope:
 			filter = tf.layers.conv2d(x, filters=filters, kernel_size=kernel_size, dilation_rate=dilation, padding='same', activation=tf.nn.tanh, name="filter")
